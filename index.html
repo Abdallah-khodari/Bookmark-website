@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <!-- for icons -->
+    <link rel="stylesheet" href="./css/all.min.css">      
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Caption:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <title>Book mark </title>
+</head>
+<body>
+
+    
+<main>
+<div class="row gx-0">
+    <div class="container d-flex align-items-center justify-content-center flex-column">
+        <div class="col-10">
+      <div class="head text-center pt-4 ">
+            <h1 class="position-relative">BOOK MARKER</h1>
+        </div>
+        <div class="details d-flex flex-column justify-content-center align-items-center py-4 p-3 mt-5">
+                <h2>
+                    <i class="fa-solid fa-bookmark"></i> 
+                     Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i> 
+
+                </h2>
+                <div class="sitename py-4 w-100">
+                    <label for="sitename" class="pb-1">
+<i class="fa-solid fa-book-bookmark"></i> site name
+                    </label>
+                    <input type="text" placeholder="Book mark name" class="form-control" id="sitename" oninput="validinput()">
+                </div>
+                <div class="siteurl w-100">
+                    <label for="siteurl">
+                        <i class="fa-solid fa-link"></i>
+                        site url
+                    </label>
+                 <input type="text" placeholder="website url" class="form-control" id="siteurl" oninput="validurl()">
+
+                </div>
+                <button type="button" class="btn btn-danger m-auto px-5 mt-4" id="submitbtn" onclick="getsitedetails()">
+                    submit
+                </button>
+
+        </div>
+          <table class="table bg-light mt-4 text-center w-100" >
+    <thead>
+<tr>
+    <th>index</th>
+    <th>Websitename</th>
+    <th>visit</th>
+    <th>Delete</th>
+</tr>
+    </thead>
+    <tbody id="tablebody">
+
+    </tbody>
+  </table>
+        </div>
+
+    </div>
+</div>
+</main>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
